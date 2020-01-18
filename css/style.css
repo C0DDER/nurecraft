@@ -1,0 +1,610 @@
+body {
+  min-width: 1170px;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #423239;
+  background-color: #000000;
+  /* background-color: #423239;
+  background-image: url("../img/index-bg.jpg");
+  background-position: top center;
+  background-repeat: no-repeat; */
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation li {
+  margin: 0 10px;
+}
+
+.site-navigation a:hover {
+  color: #ADC835;
+}
+
+.site-navigation a {
+  text-decoration: none;
+  color: #FFF9E0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.main-navigation-wrapper ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.main_photo {
+  height: calc(100vh);
+  background-image: url(../img/index-bg.jpg);
+}
+
+.main-header-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.main-header-wrapper ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.buttons-main {
+  display: flex;
+  justify-content: space-between;
+  width: 420px;
+  margin: 60px 0 0 0;
+}
+
+.buttons-main a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.registration-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  background: #ADC835;
+  border: 0;
+  padding: 0;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.registration-link:hover,
+.registration-link:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.download-launcher-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 198px;
+  height: 58px;
+  border: 1px solid #ffffff;
+  padding: 0;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.download-launcher-link:hover,
+.download-launcher-link:active {
+  background: #ffffff;
+  color: #423239;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+/* .button-download-launcher a:hover {
+  color: #343434;
+} */
+.login-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 40px;
+  background: #ADC835;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.login-link:hover,
+.login-link:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.user-navigation a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.content-main_photo {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.heading-main h2 {
+  margin: 0 0 20px 0;
+  font-size: 60px;
+  color: #ffffff;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.start-game a {
+  color: #ffe139;
+}
+
+/* Personal account--------------------------------------------------------------------------------------------------------- */
+.account {
+  background-color: #FFF9E0;
+}
+
+.user-account {
+  width: 270px;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.account-main h1 {
+  margin: 50px 0 30px 0;
+}
+
+.user-account ul {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nickname {
+  margin: 30px 0 7px 0;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.user-account span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ADC835;
+}
+
+.user-account button {
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 126px;
+  height: 126px;
+  border-radius: 63px;
+}
+
+.ava-upload {
+  width: 270px;
+  height: 40px;
+  background: #ADC835;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+}
+
+.ava-upload:hover,
+.ava-upload:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+}
+
+.account-exit {
+  width: 270px;
+  height: 40px;
+  background: #FA626B;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+}
+
+.account-exit:hover,
+.account-exit:active {
+  background: #FD8188;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.account-security {
+  display: flex;
+  justify-content: center;
+  width: 340px;
+  padding: 30px;
+  background: #ffffff;
+}
+
+.security-form input {
+  margin-bottom: 20px;
+  width: 330px;
+  height: 40px;
+  padding: 0 0 0 10px;
+}
+
+.user-account_wrapper {
+  display: flex;
+}
+
+.user-account_wrapper section {
+  margin-right: 20px;
+}
+
+.security-button {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+
+  background: #ADC835;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.security-button:hover,
+.security-button:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+}
+
+.security-form h2 {
+  margin: 0 0 25px 0;
+}
+
+.menu-pages {
+  background-color: #423239;
+}
+
+.navigation-pages_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+/* Launch --------------------------------------------------------------------------------------------------------------------------*/
+
+.launch {
+  background-color: #FFF9E0;
+}
+
+/* Scrollbar --------------------------------------------------------------------------------------------------------------------*/
+::-webkit-scrollbar {
+  /* 1 - скроллбар */
+  width: 4px;
+  height: 4px;
+  background-color: #423239;
+  /* background-color: rgba(0,0,0,0.9); */
+}
+
+::-webkit-scrollbar-track {
+  /* 3 - трек */
+  background-color: #423239;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  /* 5 - ползунок */
+  border-radius: 10px;
+  background-color: #ADC835;
+}
+
+/* Modal login ----------------------------------------------------------------------------------------------------------------*/
+.modal-login {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 50px;
+  background: #ffffff;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.login-form h2 {
+  margin: 0 0 20px 0;
+}
+
+.login-icon-user,
+.login-icon-password {
+  width: 350px;
+  height: 40px;
+  padding: 0 0 0 10px;
+  /* border: 0; */
+}
+
+.button-login {
+  /* width: 360px; */
+  width: 100%;
+  height: 40px;
+  background: #ADC835;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+}
+
+.button-login:hover,
+.button-login:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+}
+
+.links-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.links-form a {
+  text-decoration: none;
+  color: #ADC835;
+}
+
+.links-separator {
+  margin: 0 10px;
+}
+
+/* close button */
+.modal-close {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: -25px;
+  width: 22px;
+  height: 22px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-close::before,
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+}
+
+.modal-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  transform: rotate(-45deg);
+}
+
+/* Password recovery ----------------------------------------------------------------------------------------------------------------*/
+.password-recovery {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  padding: 50px;
+  background: #ffffff;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+/* Modal Registration ----------------------------------------------------------------------------------------------------------------*/
+.modal-registration {
+  display: flex;
+  justify-content: center;
+  width: 494px;
+  padding: 50px;
+  background: #ffffff;
+  /* position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.modal-registration input {
+  margin-bottom: 20px;
+}
+
+.registration-icon-password,
+.login-icon-password2 {
+  width: 484px;
+  height: 40px;
+  padding: 0 0 0 10px;
+  /* border: 0; */
+}
+
+.email-icon-user,
+.registration-icon-user,
+.ticket {
+  width: 227px;
+  height: 40px;
+  padding: 0 0 0 10px;
+  /* border: 0; */
+}
+
+.button-upload-ticket {
+  width: 237px;
+  height: 40px;
+  background: #ADC835;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+}
+
+.button-upload-ticket:hover,
+.button-upload-ticket:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+}
+
+.button-registration {
+  /* width: 360px; */
+  width: 100%;
+  height: 40px;
+  background: #ADC835;
+  border: 0;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+}
+
+.button-registration:hover,
+.button-registration:active {
+  background: #BFDD3A;
+  color: #423239;
+  cursor: pointer;
+}
+
+.links-form a {
+  text-decoration: none;
+  color: #ADC835;
+}
+
+.links-form p {
+  margin: 0;
+}
+
+.email-login {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-group {
+  display: flex;
+}
+
+.tab-group .active {
+  background: #FFE139;
+  margin-bottom: 20px;
+}
+
+.tab {
+  width: 247px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #FFF9E0;
+}
+
+.tab:hover,
+.tab:active {
+  cursor: pointer;
+}
+
+.tab a {
+  text-decoration: none;
+  color: #423239;
+}
+
+.registration-form ul,
+.registration-form li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.registration-form h2 {
+  margin: 0 0 20px 0;
+}
+
+.student-ticket {
+  display: flex;
+  justify-content: space-between;
+}
+
+.registration-capcha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.registration-text {
+  width: 241px;
+  font-size: 12px;
+}
+
+.registration-text p {
+  margin: 0;
+}
+
+.registration-capcha {
+  margin-bottom: 20px;
+}
+
+.recapcha img {
+  width: 237px;
+}
+
+.nonure {
+  margin: 0 0 20px 0;
+  color: #FF4747;
+}
+
+.nonure a {
+  text-decoration: none;
+  color: #ADC835;
+}

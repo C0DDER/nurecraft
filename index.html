@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="img/favicon.png" sizes="16x16">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap&subset=cyrillic" rel="stylesheet">
+  <title>NureCraft</title>
+</head>
+
+<body>
+
+  <header class="main-header main_photo">
+    <div class="main-header-wrapper">
+      <nav class="main-navigation">
+        <div class="main-navigation-wrapper">
+          <div class="container navigation-wrapper">
+            <ul>
+              <li>
+                <a href="index.html" class="main-header-logo">
+                  <img src="img/logo.svg" width="126" height="32" alt="Логотип NureCraft">
+                </a>
+              </li>
+            </ul>
+            <ul class="site-navigation">
+              <li>
+                <a href="pages/index.html">Главная</a>
+              </li>
+              <li>
+                <a href="pages/forum.html">Форум</a>
+              </li>
+              <li>
+                <a href="pages/servers.html">Сервера</a>
+              </li>
+              <li>
+                <a href="pages/community.html">Сообщество</a>
+              </li>
+              <li>
+                <a href="pages/support.html">Поддержка</a>
+              </li>
+              <li class="start-game">
+                <a href="pages/launch.html">Начать игру</a>
+              </li>
+            </ul>
+            <ul class="user-navigation">
+              <li>
+                <a class="login-link" href="login.html">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="content-main_photo">
+        <div class="heading-main">
+          <h2>Играй на 1.12.2 с модами!</h2><br>
+          <h2>Вместе с лучшими игроками.</h2>
+        </div>
+        <ul class="buttons-main">
+          <li class="button-reg">
+            <a class="registration-link" href="#">Создать аккаунт</a>
+          </li>
+          <li class="button-download-launcher">
+            <a class="download-launcher-link" href="#">Скачать лаунчер</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+
+  </main>
+
+  <footer>
+
+  </footer>
+  <!-- Login ------------------------------------------------------------------------------------------------------------- -->
+  <section class="modal modal-login">
+    <div class="form">
+      <div class="login-form">
+        <h2>Авторизация</h2>
+        <form action="" method="post" class="login-form">
+          <p>
+            <input id="user-login" type="text" name="login" placeholder="Никнейм" class="login-icon-user">
+          </p>
+          <p>
+            <input id="user-password" type="password" name="password" placeholder="Пароль" class="login-icon-password">
+          </p>
+          <p class="login-password-info">
+            <label class="login-checkbox">
+              <input type="checkbox" name="remember" class="visually-hidden">
+              <span class="checkbox-indicator"></span>
+              Запомнить меня
+            </label>
+          </p>
+          <button type="submit" class="button-login">Войти</button>
+          <div class="links-form">
+            <a href="#" class="restore">Нет аккаунта?</a>
+            <div class="links-separator">|</div>
+            <a href="#" class="restore">Забыли пароль?</a>
+          </div>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- Recovery ------------------------------------------------------------------------------------------------------------- -->
+  <section class="modal password-recovery">
+    <div class="form">
+      <div class="login-form">
+        <h2>Восстановление пароля</h2>
+        <form action="" method="post" class="login-form">
+          <p>
+            <input id="user-login" type="text" name="email" placeholder="Email адрес аккаунта" class="login-icon-user">
+          </p>
+          <button type="submit" class="button-login">Отправить</button>
+          <div class="links-form">
+            <a href="#" class="">Авторизация</a>
+          </div>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- Registration ------------------------------------------------------------------------------------------------------------- -->
+  <section class="modal modal-registration">
+    <div class="form">
+      <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="" method="post" class="registration-form">
+          <ul class="tab-group">
+            <li class="tab active"><a href="#emailnure">По почте @nure</a></li>
+            <li class="tab"><a href="#noemailnure">Если нет почты @nure</a></li>
+          </ul>
+          <div class="email-login">
+            <input id="#" type="text" name="email" placeholder="Почта @nure" class="email-icon-user">
+            <input id="#" type="text" name="login" placeholder="Никнейм" class="registration-icon-user">
+          </div>
+          <input id="#" type="password" name="password" placeholder="Пароль" class="registration-icon-password">
+          <input id="#" type="password" name="password" placeholder="Подтвердить пароль" class="login-icon-password2">
+          <div class="registration-capcha">
+            <div class="registration-text">
+              <strong>Подтвердите, что вы не робот</strong>
+              <p>Защита от бот-атак, захламляющих пользователькую базу</p>
+            </div>
+            <div class="recapcha"><img src="img/reCAPTCHA.png" alt=""></div>
+          </div>
+          <button type="submit" class="button-registration">Регистрация</button>
+          <div class="links-form">
+            <p>Есть аккаунт? <a href="#" class="restore">Войти</a></p>
+          </div>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
+    </div>
+  </section>
+  <br>
+  <!-- Registration NoNure ------------------------------------------------------------------------------------------------------------- -->
+  <section class="modal modal-registration">
+    <div class="form">
+      <div class="registration-form">
+        <h2>Регистрация</h2>
+        <form action="" method="post" class="registration-form">
+          <ul class="tab-group">
+            <li class="tab"><a href="#emailnure">По почте @nure</a></li>
+            <li class="tab active"><a href="#noemailnure">Если нет почты @nure</a></li>
+          </ul>
+          <div class="email-login">
+            <input id="#" type="text" name="email" placeholder="Email" class="email-icon-user">
+            <input id="#" type="text" name="login" placeholder="Никнейм" class="registration-icon-user">
+          </div>
+          <input id="#" type="password" name="password" placeholder="Пароль" class="registration-icon-password">
+          <input id="#" type="password" name="password" placeholder="Подтвердить пароль" class="login-icon-password2">
+          <div class="student-ticket">
+            <input id="#" type="text" name="ticket" placeholder="№ студенческого билета" class="ticket">
+            <button type="submit" class="button-upload-ticket">Загрузить фото</button>
+          </div>
+          <p class="nonure">Если не являетесь студентом ХНУРЭ обратитесь к администрации проекта <a href="">тык</a></p>
+          <div class="registration-capcha">
+            <div class="registration-text">
+              <strong>Подтвердите, что вы не робот</strong>
+              <p>Защита от бот-атак, захламляющих пользователькую базу</p>
+            </div>
+            <div class="recapcha"><img src="img/reCAPTCHA.png" alt=""></div>
+          </div>
+          <button type="submit" class="button-registration">Регистрация</button>
+          <div class="links-form">
+            <p>Есть аккаунт? <a href="#" class="restore">Войти</a></p>
+          </div>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
